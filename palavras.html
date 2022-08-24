@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<button class="esse">Pessoa</button>
+<h1>Resultado</h1>
+
+
+<h2>Resultado</h2>
+
+<script>
+let btnRandom = document.querySelector('.esse');
+let result = document.querySelector("h1");
+let result2 = document.querySelector("h2");
+
+function br(){
+	document.write("<br><br>");
+}	
+
+let palavras = ["Caio","Cassio","Carina","Carin","Norma","Allan","Vitor","Stephanie","Loco","Paloma","Murilo","Martin"];
+
+function getNameRandom(min,max){
+	let step1 = max - min +1;
+	let step2 = Math.random() * step1;
+	let result = Math.floor(step2) + min;
+
+	return result;
+
+}
+
+btnRandom.addEventListener('click', () =>{
+	let index = getNameRandom(0, palavras.length-1);
+	result.innerText = palavras[index];
+})
+
+
+let valor = ["Carro","Casa","Comida","Viagem","Casamento","Férias"];
+
+function getvalorRandom(min,max){
+	let step1 = max - min +1;
+	let step2 = Math.random() * step1;
+	let result2 = Math.floor(step2) + min;
+
+	return result2;
+
+}
+
+btnRandom.addEventListener('click', () =>{
+	let index = getvalorRandom(0, valor.length-1);
+	result2.innerText = valor[index];
+})
+
+
+
+
+</script>

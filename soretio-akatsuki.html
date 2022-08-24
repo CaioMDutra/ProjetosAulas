@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<button class="esse">Pessoa</button>
+<h1>Resultado</h1>
+
+
+<script>
+let btnRandom = document.querySelector('.esse');
+let result = document.querySelector("h1");
+
+
+function br(){
+	document.write("<br><br>");
+}	
+
+const bonecos = ["Hidan","Pain","Deidara","Itachi","Kakuso","Sasori","Orochimaru","Nagato","Konan","Tobi","Kisame","Zetsu"];
+
+function sorteio(min,max){
+
+ 	let step1 = max - min +1;
+	let step2 = Math.random() * step1;
+	let result = Math.floor(step2) + min; 
+    return result; 
+ 
+}
+
+btnRandom.addEventListener('click', () =>{
+ 
+	let index = sorteio(0, bonecos.length-1);
+	result.innerText = bonecos[index];
+   
+
+})
+
+
+
+</script>

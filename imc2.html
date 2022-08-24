@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+function br(){
+	document.write("<br><br>");
+}
+	
+function mostra(frase){
+	document.write(frase);
+	br();
+}
+
+var nome = prompt("informe seu nome")
+var pesoCaio = prompt("informe seu peso");
+var alturaCaio = prompt("informe sua altura");
+
+var imc = pesoCaio/(alturaCaio*alturaCaio);
+
+mostra(nome + " Seu IMC é de "+ Math.round(imc));
+
+if (imc	< 18.5){
+	mostra("Vc está abaixo do peso");
+}
+else if(imc >35){
+	mostra("Vc está acima do peso");
+}
+else{
+	mostra("Vc esta no peso normal")
+}
+
+
+</script>

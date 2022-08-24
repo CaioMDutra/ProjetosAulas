@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var number = 30;
+
+    while(number <= 40){
+        
+        if (number ==33){
+            number = number+1;
+
+        }
+        else if (number == 37){
+            number = number+1;
+        }
+        else{
+            mostra(number);
+            number = number+1;
+    }
+}
+
+mostra("Fim");
+
+</script>

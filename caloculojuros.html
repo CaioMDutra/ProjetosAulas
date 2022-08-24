@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<input id="1111">Valor atual
+<br><br>
+<input id="2222">Valor inicial
+<br><br>
+
+<button onclick="calculate()">Calcular</button>
+
+<h1 id="4444">Resultado</h1>
+
+<script>
+
+function calculate(){
+	let valorAtual = document.getElementById("1111").value;
+	let valorInicial = document.getElementById("2222").value;
+	console.log(valorAtual);
+	console.log(valorInicial);
+
+	let resultado = ((valorAtual/valorInicial)-1)*100
+
+
+	resultado = resultado.toFixed(2);
+	document.getElementById("4444").innerText="O valor aumentou em "+resultado+" %";
+
+
+}
+		
+</script>

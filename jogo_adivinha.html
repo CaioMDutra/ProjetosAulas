@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>Aqui é o titulo</h1>
+
+<script>
+
+	function br(){
+		document.write("<br><br>");
+}
+	
+	function mostra(frase){
+		document.write(frase);
+		br();
+
+
+}	
+
+var numeroPensado = Math.round(Math.random() * 10);
+var chances = 1;
+
+while(chances <= 3){
+
+	var numeroEscolhido = parseInt(prompt("Chuta ai"));
+
+	if(numeroEscolhido == numeroPensado) {
+
+		mostra("Prabéns, você acertou o numero pensado era!!! " + numeroPensado);
+		break;
+
+	} else {
+
+		mostra("Você errou!");
+	}
+
+	chances++;
+
+}
+
+mostra("FIM");
+</script>
