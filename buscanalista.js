@@ -1,11 +1,11 @@
-const son = ["Caio", "Cassio", "Carina", "Carin"];
+const son = ['Caio', 'Cassio', 'Carina', 'Carin'];
 
 const yearOld = [31,30,28,25];
 
 let list = [son, yearOld]
 
 const showData = (names) => {
-    if (son[0].includes(names)){
+    if (list[0].includes(names)){
         let indice = list[0].indexOf
         (names)
 
@@ -15,4 +15,4 @@ const showData = (names) => {
     }
 }
 
-console.log(showData("Luana"))
+console.log(showData('Carina'))
